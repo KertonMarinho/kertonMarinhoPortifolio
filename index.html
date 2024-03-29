@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700&display=swap" rel="stylesheet" />
+    <title>Portifólio Kerton Marinho</title>
+   <style>
+    * {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;   
+}
+body {
+    font-family:'Montserrat', Arial, Helvetica, sans-serif;
+    font-size:13px;
+    overflow-x:hidden;
+}
+header{
+    background-color:#3b576d;
+    height: 100px;
+}
+section{
+    background-color:#111
+}
+input, input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box; 
+}
+p{
+    font-size:18px;
+}
+textarea {
+    height: 100px; 
+}
+h1 {
+    font-size:50px;
+    font-weight: 550;
+    display: flex;
+    justify-content: center;
+    padding: 15PX;
+}
+h2 {
+    font-size:40px;
+    margin-top: 20px;;
+}
+footer {
+    height: 600px;
+    width: 100%;
+    background-color: rgb(7, 7, 7);
+    color: #FFF;
+    display:grid;
+    justify-content: center;
+    align-items: center;
+}
+.header { 
+    color:#FFF;
+    max-width:1450px;
+    height:100px;
+    align-items:center;
+}
+.infoName{
+    height: 800px;
+    width: 100%;
+    background: url(../assets/images/alien_disco_voador.gif);
+    background-repeat: no-repeat;
+    margin: auto;  
+}
+.outdoor{
+    position: absolute;
+    top:30%;
+    left: 30%;
+}
+.info{
+    height:800px;
+    background: url(../assets/images/quem.jpg);   
+    margin: auto;
+}
+.photo{
+    height:150px;
+    width: 150px;
+    background-image: url(../assets/images/photo_me.jpeg);
+    position: absolute;
+    top: 05%;
+    left: 42%;  
+    background-size: 115%;
+    background-repeat: no-repeat;
+}
+.text{
+    height:550px;
+    width: 450px;
+    position: absolute;
+    top:20%;
+    right: 5%;
+    color: #FFF;
+    font-size:36px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.textInfo{
+    color: #FFF;
+    font-size:26px;
+    position: absolute;
+    left: 20%;
+    right: 20%;
+    padding-top: 10%;
+    text-decoration: none;
+    font-weight: bold;
+}
+.container {
+    display: flex;
+    justify-content:center;
+}
+.buttons a {
+    margin-right:10px;
+    display:inline-block;
+    background-color: #fff;
+    color: #3b576d;
+    padding:  20px 40px;
+    font-size:16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    box-shadow: 0px 0px 10px #111;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+.buttons a.light {
+    color: #ffffff;
+    background-color: #426f91;
+}
+.buttons a:hover {
+    opacity: 0.8;
+}
+.formation-area {
+    display:flex;
+    align-items:first baseline;
+    height: 600px;
+}
+.formation-area--photos {
+    width:200vw;
+    max-width:1140px;
+    margin-top:20px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+.formation-area--photo {
+    width:280px;
+}
+.formation-area--photoarea {
+    margin:10px;
+    width:260px;
+    height:160px;
+}
+.formation-area--photoarea img {
+    width:inherit;
+    height:inherit;
+}
+.formation-area--photoinfo {
+    position:absolute;
+    background-color:rgba(0, 0, 0, 0.5);
+    width:inherit;
+    height:inherit;
+    display:none;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    color:#FFF;
+}
+.formation-area--photoinfo h5 {
+    font-size:30px;
+    font-weight:600;
+}
+.formation-area--photoarea:hover .formation-area--photoinfo {
+    display:flex;
+}
+.textFormation{
+    color:rgb(218, 204, 204);
+    font-size: 60px;
+}
+.portifolio{
+    height: 1950px;
+    width: 100%;
+    background-color:#F7F7F7;
+    position: relative;     
+}
+.area-portifolio{
+    display:block;
+}
+.img {
+    height:300px;
+    margin:  20px;  
+}
+.social-area{
+  display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.social-icon {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+}
+.social-icon img {
+    width: 100%;
+    height: 100%;
+}
+
+.submit {
+    background-color: #31c731;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.submit:hover {
+    background-color: #1026eb;
+}
+    </style>
+</head>
+<body>
+    <header>
+            <div class="container">
+                <div class="buttons">
+                            <a href="#l1" class="light">Quem sou eu?</a>
+                </div>
+                <div class="buttons">
+                    <a href="#l2" class="light">formação</a>
+                </div>
+                <div class="buttons">
+                    <a href="#l3" class="light">Portifólio</a>
+                </div>
+                <div class="buttons">
+                    <a href="#l4" class="light">contato</a>
+                </div>
+            </div>
+    </header>
+    <section >
+        <div >            
+            <div class="infoName">
+                <a class="outdoor" href="https://git.io/typing-svg">
+                <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=700&size=50&pause=1000&random=false&width=800&height=80&lines=Meu+nome+%C3%A9+kerton+Marinho;Seja+bem+vindo!" alt="Typing SVG" /></a>
+            </div>
+                    <p style="color:rgb(184, 181, 181)">lifeted da pixar, sem uso comercial, somente para fins educaionais</p> 
+        </div>
+        </div>
+    </section>
+    <section>
+        <div id="l1" class="info">
+            <p style="color: rgb(184, 181, 181)">Pôr do sol Morty por MXBY7E(deviantart)</p>
+            <div class="textInfo">
+                <div class="photo"></div>
+                <p>Quem sou eu?<br>Mineiro de Caxambu, atualmente morando há 20 anos da cidade da lapa no Parana, 
+                     apaixonado pelo mundo de programação,ficção cientifica, coisas nerds(ou geeks) estou sempre 
+                     apreendendo,pesquisando e buscando incansávelmente conhecimento e sonhando em ser um programador.</p>
+                </p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div  id="l2" class="formation-area">
+          <div class="formation-area--photos">
+                <div class="formation-area--photo">
+                    <div class="formation-area--photoarea">
+                        <div class="formation-area--photoinfo">
+                            <h5>Técnologo</h5>
+                            <p>Rede de computadores</p>
+                            <p>Uninter</p>
+                        </div>
+                        <img  src="assets/images/OIP (1).jfif" />
+                    </div>
+                </div>
+                <div class="formation-area--photo">
+                    <div class="formation-area--photoarea">
+                        <div class="formation-area--photoinfo">
+                            <h5>TECNOLOGO</h5>
+                            <p>Análise de sistemas</p>
+                            <p>(Em formação) </p>
+                            <p>Uninter</p>   
+                        </div>
+                        <img src="assets/images/analista-de-sistemas.webp" />
+                    </div>
+                </div>
+                <div class="formation-area--photo">
+                    <div class="formation-area--photoarea">
+                        <div class="formation-area--photoinfo">
+                            <h5>TÉCNICO</h5>
+                            <p>Logística</p>
+                            <p>UFTPR</p>
+                        </div>
+                        <img src="assets/images/logistica.jpg" />
+                    </div>
+                </div>
+                <div class="formation-area--photo">
+                    <div class="formation-area--photoarea">
+                        <div class="formation-area--photoinfo">
+                            <h5>CERTIFICADO</h5>
+                            <p>HTML5 e CSS3</p>
+                            <p>B7web</p>
+                        </div>
+                        <img src="assets/images/o-que-é-HTML5-e-CSS3-1024x576.jpg" />
+                    </div>
+                </div>
+                <div class="formation-area--photo">
+                    <div class="formation-area--photoarea">
+                        <div class="formation-area--photoinfo">
+                            <h5>CERTIFICADO</h5>
+                            <p>Javascript</p>
+                            <p>B7web</p>
+                        </div>
+                        <img src="assets/images/bkgd-js.png" />
+                    </div>
+                </div>
+                <div class="formation-area--photo">
+                    <div class="formation-area--photoarea">
+                        <div class="formation-area--photoinfo">
+                            <h5>CERTIFICADO</h5>
+                            <p>Typescript</p>
+                            <p>B7web</p>
+                        </div>
+                        <img src="assets/images/typescript-logo.png" />
+                    </div>
+                </div>
+                <div class="formation-area--photo">
+                    <div class="formation-area--photoarea">
+                        <div class="formation-area--photoinfo">
+                            <h5>CERTIFICADO</h5>
+                            <p>Inglês Básico</p>
+                            <p>Uninter</p>
+                        </div>    
+                        <img src="assets/images/ingles.jfif" />
+                    </div>
+                </div>
+                <div class="formation-area--photo">
+                    <div class="formation-area--photoarea">
+                        <div class="formation-area--photoinfo">
+                            <h5>CERTIFICADO</h5>
+                            <p>Git e github</p>
+                            <p>B7web</p>
+                        </div>
+                        <img src="assets/images/guia-git-e-github-37585.png" />
+                    </div>
+                </div>
+                <div class="textFormation">Formação Academica e cursos</div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div id="l3" class="portifolio">
+            <h1>Portífolio</h1>
+            <div class="area-portifolio">
+                <h2> Devsla</h2>
+                <p style="font-size:16px">Uma réplica do site da Tesla, Tesla é uma empresa automotiva e de armazenamento
+                     de energia norte-americana que desenvolve, produz e vende automóveis elétricos de alto desempenho, componentes
+                      para motores e transmissões para veículos elétricos e produtos à base de baterias. Foi fundada em 2003 pelos engenheiros
+                       Martin Eberhard e Marc Tarpenning em San Carlos, Califórnia. O seu nome é uma homenagem ao inventor e engenheiro eletricista Nikola Tesla.
+                        <a href="https://pt.wikipedia.org/wiki/Tesla,_Inc.">Wikipedia</a></p>
+                <a href="https://kertonmarinho.github.io/Devsla/" target="_blank"><img class="img" src="assets/images/devsla.png"></a>
+            </div>
+            <div class="area-portifolio">
+                <h2>Awax</h2>
+                <p style="font-size:16px">Recriando uma agência fictícia em inglês, utilizando vários conceitos de HTML e CSS</p>
+                <a href="https://kertonmarinho.github.io/Recriando-Awax/" target="_blank"><img class="img" src="assets/images/awax.png"></a>
+            </div>
+            <div class="area-portifolio">
+                <h2>Jogo da velha</h2>
+                <p style="font-size:16px">Recriando em Javascript/HTML/CSS o jogo da velha (português brasileiro) ou jogo do galo (português europeu) é um jogo e/ou passatempo popular. É um jogo de regras extremamente simples, que não traz grandes dificuldades para seus jogadores e é facilmente aprendido. A origem é desconhecida, com indicações de que pode ter começado no antigo Egito, onde foram encontrados tabuleiros esculpidos na rocha, que teriam mais de 3.500 anos. <a href="https://pt.wikipedia.org/wiki/Tesla,_Inc.">Wikipedia</a></p>
+                <a href="https://kertonmarinho.github.io/Jogo-da-velha/" target="_blank"><img class="img" src="assets/images/jogo da velha.png"></a>
+            </div>
+            <div class="area-portifolio">
+                <h2>Validador de Cadastro</h2>
+                <p style="font-size:16px">Criando um site conceito de validador de cadastro utilizando a linguagem de marcação HTML e CSS, junto com a linguagem de programação JavaScript, utilizando opacidade no fundo da janela com técnicas de CSS.</p>
+                <a href="https://github.com/KertonMarinho/validador-de-cadastro" target="_blank"><img class="img" src="assets/images/validadordecadastro.png"></a>
+            </div>
+        </div>
+    </section>
+    <footer id="l4">
+        <h1>CONTATO</h1>
+        <form action="" method="POST">
+            <div>
+                <label for="nome">Nome:</label><br>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            <div>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="mensagem">Digite sua mensagem:</label><br>
+                <textarea id="mensagem" name="mensagem" required></textarea>
+            </div>
+            <div>
+                <input class="submit" type="submit" value="Enviar">
+            </div>
+        </form>
+        <div >
+            <a href="https://www.linkedin.com/in/kerton-marinho-776aba208/" target="_blank" class="social-icon"><img src="assets/images/linkedin-logo-png-2041.png" alt="Facebook"></a>
+            <a href="https://github.com/KertonMarinho" target="_blank" class="social-icon"><img src="assets/images/github-icon-38974.png" alt="Facebook"></a>
+        </div>
+        <div class="alert">Trabalho acadêmico, sens fins comerciais, somente para estudo!</div>
+    </footer>
+    <script>
+    </script>
+</body>
+</html>
